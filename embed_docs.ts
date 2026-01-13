@@ -44,4 +44,4 @@ const embeddings = await mastra.embeddings.embedDocuments(chunks);
 
 console.log(embeddings);
 
-// console.log(embeddings[0].embedding.length); // vector size
+console.log(embeddings[0].embedding.length); // vector size
