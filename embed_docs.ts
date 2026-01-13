@@ -9,3 +9,8 @@ const mastra = new Mastra({
     model: "text-embedding-3-small",
   }),
 });
+
+const documentText = `
+Mastra is a framework for building AI agents.
+It supports memory, tools, workflows, and observability.
+`;
