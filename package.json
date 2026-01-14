@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/amazingawwal/mastra_ai#readme",
   "devDependencies": {
-    "@types/node": "^25.0.7",
+    "@types/node": "^25.0.8",
     "mastra": "^0.18.9",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
   "dependencies": {
