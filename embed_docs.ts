@@ -1,16 +1,21 @@
-import { Mastra } from "mastra";
-import { OpenAIEmbeddingModel } from "mastra/models/openai";
-import { RecursiveTextSplitter } from "mastra/text-splitter";
-
+import { Mastra } from "@mastra/core/mastra";
+import { embedMany } from "ai";
+import { openai } from "@ai-sdk/openai";
+import { PgVector } from "@mastra/pg";
 import { MDocument } from "@mastra/rag";
 
 
-const mastra = new Mastra({
+
+
+
+
+
+
   embeddings: new OpenAIEmbeddingModel({
     apiKey: process.env.OPENAI_API_KEY,
     model: "text-embedding-3-small",
-  }),
-});
+  });
+
 
 const documentText = `
 Mastra is a framework for building AI agents.
