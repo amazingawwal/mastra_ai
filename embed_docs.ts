@@ -30,8 +30,6 @@ async function rag(){
  console.log("This is embedding:",embeddings)
 }
 
-
-
 rag();
 
 
