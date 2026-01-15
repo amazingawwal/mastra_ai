@@ -3,12 +3,13 @@ import { embed, embedMany } from "ai";
 import { openai } from "@ai-sdk/openai";
 import { PgVector } from "@mastra/pg";
 import { MDocument } from "@mastra/rag";
-
+import 'dotenv/config';
 
 const documentText = `
 Mastra is a framework for building AI agents.
 It supports memory, tools, workflows, and observability.
 `;
+
 
 
 const docs = MDocument.fromText(documentText)
